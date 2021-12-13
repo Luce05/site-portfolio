@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: rgb(29, 29, 29);
+    font-weight: bold;
+}
+
+nav{
+    background-color: #ce170d;
+    color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+nav .menu-list li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(29, 29, 29);
+    transition: background .3s;
+    text-transform: uppercase; /* caixa alta */
+}
+
+nav .menu-list li a:hover{
+    color: rgba(0, 0, 0, 0.561);
+}
+
+.openmenu{
+    font-size: 2rem; /* unidade de medida responsiva relacionada ao tamanho da fonte*/
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .menu-list .closemenu, .icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav .logo{
+    margin: 6px;
+    font-size: 25px;
+    display: none;
+}
+
+.menu-list .icons i:hover{
+    color: rgba(0, 0, 0, 0.561);
+}
+
+@media(max-width: 800px){
+    nav .menu-list{
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #ce170d;
+        flex-direction: column; /* dispõe itens em colunas*/
+        align-items: center;
+        justify-content: center;
+        display: none;
+        transition: top ease 0.5s;
+    }
+
+    nav .logo{
+        display: block;
+        font-weight: bolder;
+    }
+
+    nav .openmenu{
+        display: block;
+    }
+
+    nav .menu-list .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .icons i{
+        display: inline-block;
+        padding: 12px;
+    }
+}
