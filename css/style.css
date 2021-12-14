@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Teko:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -13,8 +14,10 @@ body{
 }
 
 nav{
-    background-color: #ce170d;
-    color: rgb(29, 29, 29);
+    height: 54px;
+    width: 100%;
+    background-color: #D80032;
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,13 +33,14 @@ nav .menu-list li a{
     padding: 15px;
     text-decoration: none;
     font-size: 20px;
-    color: rgb(29, 29, 29);
+    font-weight: lighter;
+    color: white;
     transition: background .3s;
-    text-transform: uppercase; /* caixa alta */
+    text-transfom: uppercase; /* caixa alta */
 }
 
 nav .menu-list li a:hover{
-    color: rgba(0, 0, 0, 0.561);
+    color: rgba(255, 255, 255, 0.781);
 }
 
 .openmenu{
@@ -58,18 +62,61 @@ nav .logo{
     display: none;
 }
 
+.caveira{
+    height: 50px;
+    width: 54px;
+    background-image: url(../img/logo-3.png);
+    background-size: 60px;
+}
+
 .menu-list .icons i:hover{
-    color: rgba(0, 0, 0, 0.561);
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.img-home{
+    height: 500px;
+    width: 100%;
+    background-image: url(../img/studio-2.5.jpg);
+    background-size: 1600px;
+    font-size: 100px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    color: #D80032;
+}
+
+.img-home p{
+    font-family: 'Teko', sans-serif;
+}
+
+h2 {
+    width: 95%;
+    text-align: center;
+    font-weight: lighter;
+    border-bottom: 1px solid #D80032;
+    line-height: 0.1em;
+    margin: auto;
+    margin-top: 80px;
+    color: #D80032;
+
+}
+
+ h2 span {
+     background: rgb(29, 29, 29);
+     padding:0 10px;
 }
 
 @media(max-width: 800px){
     nav .menu-list{
         height: 80vh;
+        font-weight: normal;
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
-        background-color: #ce170d;
+        background-color: #D80032;
         flex-direction: column; /* dispõe itens em colunas*/
         align-items: center;
         justify-content: center;
@@ -79,7 +126,7 @@ nav .logo{
 
     nav .logo{
         display: block;
-        font-weight: bolder;
+        font-weight: lighter;
     }
 
     nav .openmenu{
