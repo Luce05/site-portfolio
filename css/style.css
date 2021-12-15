@@ -8,14 +8,31 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0);
+}
+
 body{
+    overflow-x: hidden;
     background-color: rgb(29, 29, 29);
     font-weight: bold;
 }
 
 nav{
-    height: 54px;
-    width: 100%;
+    height: 7vh;
+    width: 100vw;
     background-color: #D80032;
     color: white;
     display: flex;
@@ -31,12 +48,12 @@ nav{
 nav .menu-list li a{
     display: inline-block;
     padding: 15px;
+    padding-top: 30px;
     text-decoration: none;
     font-size: 20px;
     font-weight: lighter;
     color: white;
     transition: background .3s;
-    text-transfom: uppercase; /* caixa alta */
 }
 
 nav .menu-list li a:hover{
@@ -57,16 +74,16 @@ nav .menu-list .closemenu, .icons i{
 }
 
 nav .logo{
-    margin: 6px;
+    margin: 5px;
     font-size: 25px;
     display: none;
 }
 
 .caveira{
-    height: 50px;
-    width: 54px;
+    height: 40px;
+    width: 40px;
     background-image: url(../img/logo-3.png);
-    background-size: 60px;
+    background-size: 50px;
 }
 
 .menu-list .icons i:hover{
@@ -91,7 +108,7 @@ nav .logo{
     font-family: 'Teko', sans-serif;
 }
 
-h2 {
+.linha{
     width: 95%;
     text-align: center;
     font-weight: lighter;
@@ -103,12 +120,59 @@ h2 {
 
 }
 
- h2 span {
+.linha span{
      background: rgb(29, 29, 29);
      padding:0 10px;
 }
 
+.content{
+    height: 350px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.card{
+    height: 300px;
+    width: 90%;
+    background-color: rgb(29, 29, 29);
+    box-shadow: 0px 2px 23px black;
+    border-radius: 20px;
+}
+
+.topCard{
+    padding-left: 20px;
+}
+
+.mediaCard{
+    background: url(../img/logo-3.png) center/cover;
+    background-size: 235px;
+    height: 150px;
+    width: 100%;
+}
+
+.bottomCard{
+    padding-left: 20px;
+}
+
+.actions{
+    background: none;
+    border: none;
+    color: red;
+}
+
 @media(max-width: 800px){
+
+    nav{
+        height: 10vh;
+        width: 100vw;
+    }
+
     nav .menu-list{
         height: 80vh;
         font-weight: normal;
@@ -126,7 +190,6 @@ h2 {
 
     nav .logo{
         display: block;
-        font-weight: lighter;
     }
 
     nav .openmenu{
@@ -143,5 +206,11 @@ h2 {
     .icons i{
         display: inline-block;
         padding: 12px;
+    }
+
+    .img-home{
+        align-items: center;
+        justify-content: center;
+        padding-left: 5px;
     }
 }
