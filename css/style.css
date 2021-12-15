@@ -40,6 +40,14 @@ nav{
     align-items: center;
 }
 
+li{
+    list-style: none;
+}
+
+nav .menu-list .icons a{
+    color: white;
+}
+
 .menu-list{
     display: flex;
     list-style: none;
@@ -109,15 +117,14 @@ nav .logo{
 }
 
 .linha{
-    width: 95%;
-    text-align: center;
+    width: 96%;
+    text-align: left;
     font-weight: lighter;
     border-bottom: 1px solid #D80032;
     line-height: 0.1em;
-    margin: auto;
     margin-top: 80px;
+    margin-left: 25px;
     color: #D80032;
-
 }
 
 .linha span{
@@ -125,27 +132,70 @@ nav .logo{
      padding:0 10px;
 }
 
+.lanc{
+    height: auto;
+    width: 95%;
+    padding-left: 20px;
+    padding-top: 50px;
+    color: white;
+}
+
+.msc{
+    height: 80px;
+    background-color: rgb(29, 29, 29);
+    box-shadow: 0px 2px 23px rgb(19, 19, 19);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 30px;
+    margin: 10px;
+}
+
+.icon-tit{
+    display: flex;
+}
+
+.lanc ul li .msc .icon-tit .title-msc{
+    padding-left: 25px;
+    padding-bottom: 6px;
+}
+
+.caveira-msc{
+    height: 40px;
+    width: 40px;
+    background-image: url(../img/Logo.jpeg);
+    background-size: 50px;
+    border-radius: 5px;
+    display: flex;
+}
+
 .content{
     height: 350px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     background-color: rgb(29, 29, 29);
     color: white;
+    font-weight: lighter;
 }
 
 .card{
     height: 300px;
-    width: 90%;
+    width: 70%;
     background-color: rgb(29, 29, 29);
-    box-shadow: 0px 2px 23px black;
+    box-shadow: 0px 2px 23px rgb(19, 19, 19);
     border-radius: 20px;
 }
 
 .topCard{
+    padding-top: 10px;
     padding-left: 20px;
 }
 
@@ -157,13 +207,14 @@ nav .logo{
 }
 
 .bottomCard{
+    padding-bottom: 10px;
     padding-left: 20px;
 }
 
 .actions{
     background: none;
     border: none;
-    color: red;
+    color: #D80032;
 }
 
 @media(max-width: 800px){
@@ -212,5 +263,13 @@ nav .logo{
         align-items: center;
         justify-content: center;
         padding-left: 5px;
+    }
+
+    .linha{
+        width: 88%;
+    }
+
+    .card{
+        width: 60%;
     }
 }
