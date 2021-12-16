@@ -38,6 +38,8 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    z-index: 1;
 }
 
 li{
@@ -124,6 +126,7 @@ nav .logo{
     line-height: 0.1em;
     margin-top: 80px;
     margin-left: 25px;
+    margin-bottom: 20px;
     color: #DD1C1A;
 }
 
@@ -137,6 +140,7 @@ nav .logo{
     width: 95%;
     padding-left: 20px;
     padding-top: 50px;
+    padding-bottom: 1px;
     color: white;
 }
 
@@ -152,7 +156,7 @@ nav .logo{
     padding-left: 30px;
     padding-right: 40px;
     padding-top: 30px;
-    margin: 10px;
+    margin: 15px;
 }
 
 .icon-tit{
@@ -213,10 +217,17 @@ nav .logo{
     padding-left: 20px;
 }
 
-.actions{
-    background: none;
-    border: none;
-    color: #DD1C1A;
+.icons-2{
+    display: flex;
+    font-size: 2rem;
+}
+
+.bi-y{
+    color: #FF0000;
+}
+
+.bi-s{
+    color: #1ED760;
 }
 
 @media(max-width: 800px){
@@ -269,6 +280,10 @@ nav .logo{
 
     .linha{
         width: 88%;
+    }
+
+    .lanc{
+        padding-left: 0;
     }
 
     .card{

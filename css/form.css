@@ -27,8 +27,7 @@ form{
     color: white;
     margin: auto;
     text-align: center;
-    margin-top: 50px;
-    backdrop-filter: blur(5px);
+    margin-top: 110px;
 }
 
 form label{
@@ -58,6 +57,7 @@ form textarea{
     border-color: #DD1C1A;
     border-radius: 10px;
     background-color: rgb(29, 29, 29);
+    color: white;
     margin-top: 25px;
 }
 
