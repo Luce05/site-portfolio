@@ -33,7 +33,7 @@ body{
 nav{
     height: 7vh;
     width: 100vw;
-    background-color: #D80032;
+    background-color: #DD1C1A;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -109,7 +109,7 @@ nav .logo{
     align-items: flex-end;
     padding-bottom: 30px;
     padding-left: 50px;
-    color: #D80032;
+    color: #DD1C1A;
 }
 
 .img-home p{
@@ -120,11 +120,11 @@ nav .logo{
     width: 96%;
     text-align: left;
     font-weight: lighter;
-    border-bottom: 1px solid #D80032;
+    border-bottom: 1px solid #DD1C1A;
     line-height: 0.1em;
     margin-top: 80px;
     margin-left: 25px;
-    color: #D80032;
+    color: #DD1C1A;
 }
 
 .linha span{
@@ -157,18 +157,20 @@ nav .logo{
 
 .icon-tit{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 13px;
 }
 
 .lanc ul li .msc .icon-tit .title-msc{
     padding-left: 25px;
-    padding-bottom: 6px;
 }
 
 .caveira-msc{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     background-image: url(../img/Logo.jpeg);
-    background-size: 50px;
+    background-size: 55px;
     border-radius: 5px;
     display: flex;
 }
@@ -214,7 +216,7 @@ nav .logo{
 .actions{
     background: none;
     border: none;
-    color: #D80032;
+    color: #DD1C1A;
 }
 
 @media(max-width: 800px){
@@ -231,7 +233,7 @@ nav .logo{
         top: 0;
         right: 0;
         left: 0;
-        background-color: #D80032;
+        background-color: #DD1C1A;
         flex-direction: column; /* dispõe itens em colunas*/
         align-items: center;
         justify-content: center;
