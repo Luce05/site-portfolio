@@ -235,6 +235,17 @@ nav .logo{
     color: #1ED760;
 }
 
+.sbn{
+    width: 70%;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 75px;
+}
+
 @media(max-width: 800px){
 
     nav{
@@ -293,5 +304,9 @@ nav .logo{
 
     .card{
         width: 60%;
+    }
+
+    .sbn{
+        text-align: left;
     }
 }
